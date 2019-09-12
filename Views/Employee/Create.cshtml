@@ -1,0 +1,74 @@
+@{
+    ViewBag.Title = "Create a new Employee";
+}
+
+<form method="post" asp-controller="Employee" asp-action="Save">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>First Name : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="firstName"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Last Name : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="lastName"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Age : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="age"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>National Insurance # : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="nationalInsuranceNo"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Gender : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option selected>Select a gender...</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Address : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="address"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Monthly Salary : </label>
+        </div>
+        <div class="form-group col-md-8">
+            <input name="monthlySalary"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-8">
+            
+        </div>
+        <div class="form-group col-md-4">
+            <input class="btn btn-rounded btn-success" type="submit" name="submitBtn" value="Serialize & Save"/>
+        </div>
+    </div>
+</form>
